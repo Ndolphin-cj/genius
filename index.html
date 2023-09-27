@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/09_27.loader.js";
       var config = {
-        dataUrl: buildUrl + "/09_27.data.gz",
-        frameworkUrl: buildUrl + "/09_27.framework.js.gz",
-        codeUrl: buildUrl + "/09_27.wasm.gz",
+        dataUrl: buildUrl + "/09_27.data.unityweb",
+        frameworkUrl: buildUrl + "/09_27.framework.js.unityweb",
+        codeUrl: buildUrl + "/09_27.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Genius Hammer",
@@ -89,12 +89,12 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-        // unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
